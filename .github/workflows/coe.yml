@@ -1,0 +1,12 @@
+name: coe
+on: push
+jobs:
+  ok:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo fine
+  report:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - run: exit 1
